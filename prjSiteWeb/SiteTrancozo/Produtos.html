@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilotrancrozo.css" type="text/css" />
+    <link rel="stylesheet" href="css/produtos.css" type="text/css" />
+
+    <!-- Ionicons (versão atualizada) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Produtos</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <!-- Cabeçalho -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="Imagens/logo-sem-fundo.png" alt="Logo do Trancozo Shoes" />
+      </a>
+      <nav id="menu">
+        <a href="index.html" title="Home">Home</a>
+        <a href="Produtos.html" title="Produtos">Produtos</a>
+        <a href="Suporte.html" title="Suporte">Suporte</a>
+      </nav>
+      <div class="icons">
+        <div><ion-icon name="search"></ion-icon></div>
+        <div id="menu-btn"><ion-icon name="menu"></ion-icon></div>
+      </div>
+    </header>
+
+    <!-- Corpo principal -->
+    <main>
+      <section class="produtos">
+        <!-- Produto 1 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Plataforma Mia Preto.jpg"
+            alt="Plataforma Mia Preto"
+          />
+          <h3>Plataforma Mia Preto</h3>
+          <div class="ValProd">R$ 280,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 2 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Flatform Tereza Off White.jpg"
+            alt="Flatform Tereza Off White"
+          />
+          <h3>Flatform Tereza Off White</h3>
+          <div class="ValProd">R$ 175,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 3 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Flatform Tereza Preto.jpg"
+            alt="Flatform Tereza Preto"
+          />
+          <h3>Flatform Tereza Preto</h3>
+          <div class="ValProd">R$ 172,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 4 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Papete Brisa Colors Branco.png"
+            alt="Papete Brisa Colors Branco"
+          />
+          <h3>Papete Brisa Colors Branco</h3>
+          <div class="ValProd">R$ 191,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 5 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Papete Brisa Preto Preto.jpg"
+            alt="Papete Brisa Preto"
+          />
+          <h3>Papete Brisa Preto</h3>
+          <div class="ValProd">R$ 177,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 6 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Rasteira Joana Preto.jpg"
+            alt="Rasteira Joana Preto"
+          />
+          <h3>Rasteira Joana Preto</h3>
+          <div class="ValProd">R$ 99,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 7 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Rasteira Joana Off White.jpg"
+            alt="Rasteira Joana Off White"
+          />
+          <h3>Rasteira Joana Off White</h3>
+          <div class="ValProd">R$ 99,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 8 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Flatform Olivia Prata.jpg"
+            alt="Flatform Olivia Prata"
+          />
+          <h3>Flatform Olivia Prata</h3>
+          <div class="ValProd">R$ 179,90</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 9 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Flatform Iza Off White.jpeg"
+            alt="Flatform Iza Off White"
+          />
+          <h3>Flatform Iza Off White</h3>
+          <div class="ValProd">R$ 140,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+
+        <!-- Produto 10 -->
+        <article class="Prod">
+          <img
+            src="Imagens/Flatform Tereza Preto.jpg"
+            alt="Flatform Tereza Preto"
+          />
+          <h3>Flatform Tereza Preto</h3>
+          <div class="ValProd">R$ 180,00</div>
+          <button class="addToCart">Adicionar ao Carrinho</button>
+        </article>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        © 2024 Trancozo Shoes. Todos os direitos reservados. (Criado por Maik
+        Lian)
+      </p>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

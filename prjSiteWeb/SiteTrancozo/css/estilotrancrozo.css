@@ -1,0 +1,234 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   ESTRUTURA GERAL
+=========================== */
+body {
+    font-family: 'Tahoma', Geneva, sans-serif;
+    background-color: #fef8f2;
+    color: #000000ba;
+    line-height: 1.6;
+    padding-top: 80px;
+    /* espaço pro header fixo */
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===========================
+   CABEÇALHO
+=========================== */
+.header {
+    background-color: #907777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+    height: 60px;
+}
+
+#menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-top: 2px solid #ae9393;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+#menu a:hover {
+    color: #000000ba;
+    border-top: 2px solid #bc9e98ba;
+    background: #D8E1F3;
+}
+
+/* Ícones */
+.icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icons ion-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icons ion-icon:hover {
+    color: #ffcc00;
+}
+
+#menu-btn {
+    display: none;
+}
+
+/* ===========================
+   PRODUTOS
+=========================== */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.Prod {
+    background-color: #fff;
+    border: 1px solid #bc9e98ba;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.Prod:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Prod img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.Prod h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #a9767a;
+    font-weight: bold;
+}
+
+.ValProd {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+.addToCart {
+    background-color: #907777;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addToCart:hover {
+    background-color: #a9767a;
+}
+
+/* ===========================
+   TÍTULOS
+=========================== */
+h1 {
+    font-size: 36px;
+    color: #000000ba;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000000ba;
+    font-weight: normal;
+    border-bottom: 2px solid #a9767a;
+    padding-bottom: 5px;
+}
+
+/* ===========================
+   RODAPÉ
+=========================== */
+footer {
+    background-color: #907777;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+@media (max-width: 1000px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #907777;
+        padding: 10px 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+
+    #menu.active {
+        display: flex;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    .header .logo img {
+        height: 40px;
+    }
+}

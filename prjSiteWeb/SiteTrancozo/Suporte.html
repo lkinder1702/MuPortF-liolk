@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suporte_FAQ</title>
+
+    <!-- Fontes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilotrancrozo.css" />
+    <link rel="stylesheet" href="css/Suporte.css" />
+
+    <!-- Ícones -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <a href="index.html" class="logo">
+        <img src="Imagens/logo-sem-fundo.png" alt="Logo do Trancozo Shoes" />
+      </a>
+
+      <nav id="menu">
+        <p>
+          <a href="index.html" title="Home">Home</a>
+          <a href="Produtos.html" title="Produtos">Produtos</a>
+          <a href="Suporte.html" title="Suporte">Suporte</a>
+        </p>
+      </nav>
+
+      <div class="icons">
+        <div><ion-icon name="search"></ion-icon></div>
+        <div id="menu-btn"><ion-icon name="menu"></ion-icon></div>
+      </div>
+    </header>
+
+    <!-- Corpo Principal -->
+    <main>
+      <section>
+        <h4>Horários de atendimento:</h4>
+        <ul>
+          <li>Seg a sex 09:00 a 19:00, sáb 09:00 às 13:00</li>
+        </ul>
+
+        <h4>Troca e Devolução:</h4>
+        <ul>
+          <li>
+            Prazo de 7 dias corridos para troca e devolução, incluindo finais de
+            semana e feriados.
+          </li>
+          <li>
+            As peças devem ser devolvidas em embalagem original e sem indícios
+            de uso.
+          </li>
+          <li>
+            Você poderá escolher outra peça de mesmo valor ou solicitar
+            reembolso.
+          </li>
+        </ul>
+
+        <h4>Endereço:</h4>
+        <ul>
+          <li>
+            Av. Campo Grande, 370 - Campo Grande, Cariacica - ES, 29146-300
+          </li>
+        </ul>
+
+        <h4>Formas de pagamento:</h4>
+        <ul class="ulNumb">
+          <li>Mastercard</li>
+          <li>PayPal</li>
+          <li>Banco Inter</li>
+          <li>Itaú</li>
+          <li>Mercado Pago</li>
+          <li>PicPay</li>
+          <li>Pix</li>
+        </ul>
+
+        <h4>Formas de Envio:</h4>
+        <ul>
+          <li>Correios PAC</li>
+          <li>Correios SEDEX</li>
+          <li>Jadlog</li>
+          <li>Motoboy: Vitória, Vila Velha, Viana, Serra e Cariacica</li>
+        </ul>
+      </section>
+
+      <!-- Suporte -->
+      <section>
+        <h2>Suporte</h2>
+        <form method="post" action="obrigado.html">
+          <p>
+            <label for="nome">Nome:</label><br />
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="email">E-mail:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </p>
+
+          <p>
+            <label for="obs">Problemas:</label><br />
+            <textarea
+              name="obs"
+              id="obs"
+              placeholder="Relate aqui os problemas apresentados"
+              required
+            ></textarea>
+          </p>
+
+          <p>
+            <input type="submit" value="Enviar" />
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        © 2024 Trancozo Shoes. Todos os direitos reservados. (Criado por Maik
+        Lian)
+      </p>
+    </footer>
+
+    <!-- Script para menu responsivo -->
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      if (menuBtn) {
+        menuBtn.addEventListener("click", () => {
+          menu.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>

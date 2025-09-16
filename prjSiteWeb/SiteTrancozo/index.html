@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/estilotrancrozo.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="Imagens/logo-sem-fundo.png" alt="Logo do Trancozo Shoes" />
+      </a>
+      <nav id="menu">
+        <a href="index.html" title="Home">Home</a>
+        <a href="Produtos.html" title="Produtos">Produtos</a>
+        <a href="Suporte.html" title="Suporte">Suporte</a>
+      </nav>
+      <div class="icons">
+        <div><ion-icon name="search"></ion-icon></div>
+        <div id="menu-btn"><ion-icon name="menu"></ion-icon></div>
+      </div>
+    </header>
+
+    <!-- FIM DO CABEÇALHO -->
+
+    <!-- Corpo principal da página -->
+    <!-- INICIO DO CONTEUDO -->
+    <main>
+      <section class="introducao">
+        <h1>Trancozo Shoes</h1>
+        <h2></h2>
+      </section>
+
+      <section class="home" id="home">
+        <div class="content">
+          <h3>Bem-vindo à Trancozo Shoes!</h3>
+          <p>
+            "Onde estilo e conforto caminham juntos. Descubra os melhores
+            calçados para todos os momentos!"
+          </p>
+        </div>
+      </section>
+
+      <section class="sobre-nos">
+        <h3>Sobre Nós</h3>
+        <p>
+          Sou Gabriela, 23 anos, cristã, filha da Jô e do Fernando, e esposa do
+          Thiago.
+        </p>
+        <p>
+          Fui nascida e criada em uma comunidade chamada Ilha do Príncipe, para
+          quem não me conhece, é uma periferia no município de Vitória.
+          Empreender sempre fez parte de mim. Já fui de tudo um pouco que vocês
+          puderem imaginar: já vendi peixe na feira com meu pai, já vendi
+          miçangas com uma amiga na época de escola, Natura, roupas e já fui
+          freelance em uma empresa de decorações (inclusive é uma profissão que
+          me encanta até hoje).
+        </p>
+        <p>
+          Por um bom período da minha vida, fui funcionária CLT, na qual tenho
+          muito orgulho dos aprendizados que vivi. E por isso empreender para
+          nós, que viemos da escola pública, é um desafio. Infelizmente, hoje
+          nossa educação financeira é algo que deixa a desejar, mas, com as
+          facilidades que a internet oferece, a gente vai aprendendo o básico
+          para começar, às vezes com erros também. Mas com foco e determinação,
+          as coisas vão se ajeitando.
+        </p>
+        <p>
+          Empreender para mim tem sido um dos muitos aprendizados. Hoje, tenho
+          vocês aqui da Trancozo Shoes e atuo na área de correspondente bancário
+          nos bastidores.
+        </p>
+      </section>
+
+      <!-- CONTATO -->
+
+      <section class="contato">
+        <h3>Contato</h3>
+        <ul>
+          <li>
+            <ion-icon name="logo-whatsapp"></ion-icon>:
+            <a
+              href="https://api.whatsapp.com/send?l=pt_br&phone=5527992713261"
+              target="_blank"
+              >27992713261</a
+            >
+          </li>
+          <li>
+            <ion-icon name="logo-instagram"></ion-icon>:
+            <a href="https://www.instagram.com/trancozo_shoes/" target="_blank"
+              >@trancozo_shoes</a
+            >
+          </li>
+          <li>
+            <ion-icon name="logo-tiktok"></ion-icon>:
+            <a
+              href="https://www.tiktok.com/@trancozoshoes?_t=8mVovCYjkBi&_r=1"
+              target="_blank"
+              >trancozoshoes</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- ENDEREÇO -->
+
+      <section class="endereco">
+        <h4>Endereço</h4>
+        <p>
+          Av. Campo Grande, 370 - Campo Grande, Cariacica - ES, 29146-300. Ed.
+          Juliana, sala 205, segundo andar.
+        </p>
+        <p>Seg a Sex das 9h às 12h / 14h às 18h</p>
+      </section>
+    </main>
+
+    <!-- FIM DO CONTEUDO -->
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2024 Trancozo Shoes. Todos os direitos reservados. (Criado por
+          Julio Cesar).
+        </p>
+      </div>
+    </footer>
+
+    <!-- Ícones -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
